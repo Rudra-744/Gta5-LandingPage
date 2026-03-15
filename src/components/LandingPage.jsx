@@ -36,7 +36,7 @@ const LandingPage = ({ navref }) => {
           src="/girlbg.png"
           alt="GTA character silhouette"
           loading="eager"
-          className="character absolute -bottom-[150%] left-1/2 -translate-x-1/2 scale-[3] rotate-[-20deg]"
+          className="character absolute -bottom-[150%] left-1/2 -translate-x-1/2 scale-[1] rotate-[-10deg]"
         />
       </div>
 

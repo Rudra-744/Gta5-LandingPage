@@ -20,7 +20,7 @@ const MainContent = () => {
       lenisOptions: {
         smoothWheel: true,
         syncTouch: true,
-        lerp: 0.08,
+        lerp: 0.09,
       },
       scrollCallback: ScrollTrigger.update,
     });
@@ -57,10 +57,10 @@ const MainContent = () => {
       animateCommon();
       gsap.to(".character", {
         scale: 0.7,
-        bottom: "-40%",
+        bottom: "-30%",
         rotate: 0,
-        duration: 2,
-        delay: 0.2,
+        duration: 1.7,
+        delay: 0.3,
         ease: "Expo.easeInOut",
       });
 
@@ -83,10 +83,10 @@ const MainContent = () => {
 
       const handleMouseMove = (e) => {
         let x = (e.clientX / window.innerWidth - 0.5) * 40;
-        moveText(-x * 0.6);
-        moveSky(-x * 1.2);
-        moveBg(x * 1.5);
-        moveNav(x * 0.2);
+        moveText(-x * 2.5);
+        moveSky(-x * 2);
+        moveBg(x * 2);
+        moveNav(x * 1.2);
       };
 
       mainref.current?.addEventListener("mousemove", handleMouseMove);
